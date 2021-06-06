@@ -24,7 +24,14 @@
 </div>
 </div>
 </header>
-<nav>Menú principal</nav>
+<nav>
+  <ul>
+    <li>Primer element</li>
+    <li>Segon element</li>
+    <li>Tercer</li>
+    <li>quart</li>
+  </ul>
+</nav>
 <div id="cercador">Cercador</div>
 <div id="footer"></div>
   <script src="js/scripts.js"></script>
