@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open sans', sans-serif;
 }
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
@@ -12,11 +13,21 @@ body {
 
 #logo {
   order: 2;
+  box-sizing: border-box;
+  padding: 0.75em;
+}
+
+#logo img {
+  width: 100%;
+  height: auto;
 }
 
 #idiomes-xarxes-correu {
   order: 1;
-  width: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #000;
+  color: #fff;
 }
 #idiomes-cap {
   width: 49%;
@@ -27,16 +38,35 @@ body {
 #correu-cap {
   width: 49%;
   display: inline-block;
-box-sizing: border-box;
-text-align: right;
-padding: 0.75em;
+  box-sizing: border-box;
+  text-align: right;
+  padding: 0.75em;
 }
 #xarxes-cap {
   display: none;
 }
-.bloc
-
+#iconaburguer {
+  width: 49%;
+  display: inline-block;
 }
+#cercador {
+  width: 49%;
+  display: inline-block;
+  text-align: right;
+}
+
+#menupral {
+  display: none;
+}
+
+nav {
+  display: inline-block;
+  width: 100vw;
+  padding: 0.75em;
+  background-color: rgb(0,225,43);
+  box-sizing: border-box;
+}
+
 
 /* Estils escriptori */
 
