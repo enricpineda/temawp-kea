@@ -16,7 +16,11 @@ function register_my_menus() {
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 add_action( 'init', 'register_my_menus' );
 
+add_theme_support( 'post-thumbnails' );
+
 // Cadenes de text a traduir
 pll_register_string("entrada-correu", "Accés al correu");
 pll_register_string("donem-suport", "Donem suport");
+pll_register_string("noticies", "Notícies");
+
 ?>

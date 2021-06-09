@@ -54,6 +54,12 @@ a:hover {
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
 
+#footer {width: 100vw; box-sizing: border-box; padding: 0.75;}
+#footer div {width: 100%;}
+.donemsuport-llistat {margin: 0; padding: 0.75em; display:flex; flex-direction: row; flex-wrap: wrap;}
+.donemsuport-llistat li {list-style-type: none; flex-grow: 1;}
+
+
 #logo-xarxes {display: flex;flex-flow: column;}
 
 #logo {order: 2; box-sizing: border-box;padding: 0.75em;}
@@ -65,6 +71,9 @@ a:hover {
   width: 100vw;
   box-sizing: border-box;
   background-color: #000;
+  color: #fff;
+}
+#idiomes-xarxes-correu a {
   color: #fff;
 }
 #idiomes-cap {
@@ -124,6 +133,8 @@ a:hover {
   box-sizing: border-box;
 }
 
+#menupral ul ul {display:none;}
+
 #menupral ul li {
   list-style-type: none;
   margin: 0;
@@ -148,7 +159,10 @@ nav {
 }
 
 .submenuo {display: none;}
-
+#twitter {display: none;}
+#menulateral {padding: 0; margin: 0 0.75em 0 0;}
+#menulateral ul {margin: 0; padding: 0;}
+#menulateral ul li {list-style-type: none; font-family: 'akkurat'; font-size: 1.2em; margin: 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
 }
 
 /* Estils escriptori */
@@ -162,22 +176,20 @@ header {width: 1200px; margin: 0px auto;}
 .donemsuport-llistat {display: flex; margin: 0; padding: 0.75em;}
 .donemsuport-llistat li {list-style-type: none; display: inline-block; flex-grow: 1;}
 
-#menulateral {order: 1; flex-grow: 1; padding: 0; margin: 0 0.75em 0 0;}
+#menulateral {order: 1; width: 220px; padding: 0; margin: 0 0.75em 0 0;}
 #menulateral ul {margin: 0; padding: 0;}
-#menulateral ul li {list-style-type: none; font-family: 'akkurat'; font-size: 1.3em; margin: 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
-#twitter {width: 250px;}
-#central {order: 2; flex-grow: 7; display: flex; flex-flow: column;}
-#agenda {order: 3; flex-grow: 2;}
+#menulateral ul li {list-style-type: none; font-family: 'akkurat'; font-size: 1.2em; margin: 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
+#twitter {width: 200px;}
+#central {order: 2; width: 60%; display: flex; flex-flow: column; padding: 0 0 0 2em;}
+#agenda {order: 3; width: 25%;}
+.noticia-gran {display: flex; flex-direction: row;}
+.imatge-noticia {order: 1; flex-grow: 1;}
+.text-noticia {order:2; flex-grow: 3; box-sizing: border-box; margin: 0; padding: 0 0 0 0.75em;}
 
-  #logo-xarxes {display: flex;flex-flow: row;}
-
-  #logo {order: 1; box-sizing: border-box;padding: 0.75em; width: auto; flex-grow: 1;}
-
-  #logo img {width: 400px;height: auto;}
-
-  #idiomes-xarxes-correu {
-    order: 2;
-     flex-grow: 1;
+#logo-xarxes {display: flex;flex-flow: row;}
+#logo {order: 1; box-sizing: border-box;padding: 0.75em; width: auto; flex-grow: 1;}
+#logo img {width: 400px;height: auto;}
+#idiomes-xarxes-correu {order: 2;flex-grow: 1;
     box-sizing: border-box;
 display: flex;
 flex-flow: row-reverse;
