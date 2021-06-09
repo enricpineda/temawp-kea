@@ -1,18 +1,18 @@
 <?php get_header();?>
 
+<div id="principal">
 <div id="menulateral">Menú lateral</div>
 
 <?php
 if ( have_posts() ) :
     while ( have_posts() ) : the_post();
-        // Display post content
+        ?>
+<h1><?php the_title();?></h1>
+<p><?php the_content();?></p>
+        <?php
     endwhile;
 endif;
 ?>
+</div>
 
-<div id="footer"></div>
-  <script src="js/scripts.js"></script>
-  <script src="funcions.js"></script>
-
-</body>
-</html>
+<?php get_footer();?>

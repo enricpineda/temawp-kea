@@ -30,6 +30,27 @@ body {
 
 }
 
+a {
+  color: rgb(43,44,40);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0,225,43);
+}
+
+.lang-item {
+  list-style-type: none;
+}
+
+#capapeu {
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: #dadada;
+  padding: 0.75em;
+}
+#principal {padding: 0.75em;}
+
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
 
@@ -135,6 +156,18 @@ nav {
 @media only screen and (min-width: 769px) {
 
 header {width: 1200px; margin: 0px auto;}
+#principal {width: 1200px; margin: 0px auto; display: flex; flex-direction: row;}
+#footer {width: 1200px; margin: 0px auto; display: flex; flex-direction: row;}
+#footer div {flex-grow: 1;}
+.donemsuport-llistat {display: flex; margin: 0; padding: 0.75em;}
+.donemsuport-llistat li {list-style-type: none; display: inline-block; flex-grow: 1;}
+
+#menulateral {order: 1; flex-grow: 1; padding: 0; margin: 0 0.75em 0 0;}
+#menulateral ul {margin: 0; padding: 0;}
+#menulateral ul li {list-style-type: none; font-family: 'akkurat'; font-size: 1.3em; margin: 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
+#twitter {width: 250px;}
+#central {order: 2; flex-grow: 7; display: flex; flex-flow: column;}
+#agenda {order: 3; flex-grow: 2;}
 
   #logo-xarxes {display: flex;flex-flow: row;}
 
@@ -170,7 +203,17 @@ flex-wrap: wrap;
     box-sizing: border-box;
     text-align: right;
     padding: 0.75em;
+    display: flex;
+    flex-direction: row-reverse;
   }
+#xarxes-cap > div {
+  margin: 0 0.25em;
+}
+#xarxes-cap img {
+  height: 32px;
+  width: auto;
+}
+
   #iconaburguer {
     display: none;
   }
@@ -210,7 +253,7 @@ flex-grow: 5;
 #menupral ul ul {
   position: absolute; top: 100%; display: none; background-color: #00e12b; z-index: 123456; width: 100%;
 }
-  .menu-item{
+  #menupral ul li{
     list-style-type: none;
     margin: 0;
     flex-grow: 1;
@@ -219,7 +262,7 @@ flex-grow: 5;
     position: relative;
   }
 
-  .menu-item a {
+#menupral ul li a {
     padding: 0.75em;
       text-decoration: none;
     display: block;
@@ -238,9 +281,9 @@ flex-grow: 5;
     background-repeat: repeat-x, repeat-x;
   }
 
-.menu-item:hover {background-color: #00e12b; color: rgb(43,44,40);}
-.menu-item:hover > a {color: rgb(43,44,40);}
-.menu-item:hover > ul.sub-menu {display: block;}
+#menupral ul li:hover {background-color: #00e12b; color: rgb(43,44,40);}
+#menupral ul li:hover > a {color: rgb(43,44,40);}
+#menupral ul li:hover > ul.sub-menu {display: block;}
 #menupral ul ul:hover {display: block;}
 #menupral ul ul:hover ~ a {background-color: #00e12b;
 color: rgb(43,44,40);;}

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Gagagagaga</title>
+  <title><?php bloginfo( 'name' ); ?></title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,10 +20,13 @@
 </div>
 <div id="idiomes-xarxes-correu">
 
-    <div id="idiomes-cap">Idiomes</div>
-    <div id="xarxes-cap">Xarxes socials</div>
+    <div id="idiomes-cap"><?php pll_the_languages(array('hide_current' => 1));?></div>
+    <div id="xarxes-cap">
+      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/logo-telegram_.jpg');?>"/></a></div>
+      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/icona_correu_kea.png');?>"/></a></div>
+    </div>
 
-  <div id="correu-cap">Accés al correu</div>
+  <div id="correu-cap"><?php pll_e('Accés al correu');?></div>
 </div>
 </div>
 </header>
