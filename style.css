@@ -1,26 +1,43 @@
+/*
+Theme Name: KEA
+Theme URI: https://github.com/enricpineda/temawp-kea
+Author: Enric Pineda
+Author URI: https://enricpineda.cat/
+Description: El tema principal de la nova web de KEA
+Version: 0.1
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kea
+
+*/
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open sans', sans-serif;
 }
+
+@font-face {
+    font-family: 'akkurat';
+    src: url('fonts/akkurat-webfont.woff2') format('woff2'),
+         url('fonts/akkurat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
 
-#logo-xarxes {
-  display: flex;
-  flex-flow: column;
-}
+#logo-xarxes {display: flex;flex-flow: column;}
 
-#logo {
-  order: 2;
-  box-sizing: border-box;
-  padding: 0.75em;
-}
+#logo {order: 2; box-sizing: border-box;padding: 0.75em;}
 
-#logo img {
-  width: 100%;
-  height: auto;
-}
+#logo img {width: 100%;height: auto;}
 
 #idiomes-xarxes-correu {
   order: 1;
@@ -46,32 +63,184 @@ body {
   display: none;
 }
 #iconaburguer {
-  width: 49%;
+  width: 19%;
   display: inline-block;
 }
 #cercador {
-  width: 49%;
+  width: 79%;
   display: inline-block;
   text-align: right;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 5px 0;
+}
+#cercador input {
+  width: 80%;
+  border: 0;
+}
+#cercador img {
+  height: 23px;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.sercxilo-telefono {
+  display: inline-block;
+}
+.sercxilo-granda {
+  display: none;
 }
 
 #menupral {
   display: none;
+  width: 100%;
+}
+
+#menupral ul {
+  margin: 0;
+  padding: 0.75em;
+  box-sizing: border-box;
+}
+
+#menupral ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.75em 0;
+  border-bottom: 1px dashed rgb(43,44,40);
+  width: 100%;
+}
+
+#menupral ul li a {
+  color: rgb(43,44,40);
+  text-decoration: none;
 }
 
 nav {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100vw;
   padding: 0.75em;
   background-color: rgb(0,225,43);
   box-sizing: border-box;
 }
 
+.submenuo {display: none;}
+
+}
 
 /* Estils escriptori */
 
 @media only screen and (min-width: 769px) {
-#logo-xarxes {
-  display: inline-block;
-}
+
+header {width: 1200px; margin: 0px auto;}
+
+  #logo-xarxes {display: flex;flex-flow: row;}
+
+  #logo {order: 1; box-sizing: border-box;padding: 0.75em; width: auto; flex-grow: 1;}
+
+  #logo img {width: 400px;height: auto;}
+
+  #idiomes-xarxes-correu {
+    order: 2;
+     flex-grow: 1;
+    box-sizing: border-box;
+display: flex;
+flex-flow: row-reverse;
+flex-wrap: wrap;
+  }
+  #idiomes-cap {
+    order: 2;
+    width: 69%;
+    box-sizing: border-box;
+    padding: 0.75em;
+    text-align: right;
+  }
+  #correu-cap {
+    order: 1;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 0.75em;
+  }
+  #xarxes-cap {
+    order: 3;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 0.75em;
+  }
+  #iconaburguer {
+    display: none;
+  }
+  #cercador {
+    order: 2;
+    flex-grow: 1;
+    display: inline-block;
+    text-align: right;
+    padding: 1.25em 0.75em 1.25em 0;
+  }
+  #cercador img {
+    height: 23px;
+    width: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+
+  .sercxilo-granda {
+    display: inline-block;
+  }
+  .sercxilo-telefono {
+    display: none;
+  }
+
+  #menupral {
+order: 1;
+flex-grow: 5;
+#background-color: #fff;
+  }
+  #menupral ul {
+    margin: 0;
+    padding: 0.50em;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+  }
+
+  #menupral ul li {
+    list-style-type: none;
+    margin: 0;
+    flex-grow: 1;
+    font-family: 'akkurat';
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  #menupral ul li a {
+    padding: 0.75em;
+      text-decoration: none;
+    display: block;
+    color: rgb(43,44,40);
+  }
+
+
+  nav {
+    width: 1200px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background-image: url('img/provaigual-2.png'), url('img/provaigual-2.png');
+    background-position: top left, bottom left;
+    background-repeat: repeat-x, repeat-x;
+  }
+
+.submenuo {position: absolute; top: 100%; display: none; background-color: #00e12b; z-index: 123456; width: 100%;}
+.cxefaligilo:hover {background-color: #00e12b; color: rgb(43,44,40);}
+.cxefaligilo:hover > a {color: rgb(43,44,40);}
+.cxefaligilo:hover > .submenuo {display: block;}
+.submenuo:hover {display: block;}
+.submenuo:hover ~ a {background-color: #00e12b;
+color: rgb(43,44,40);;}
 }
