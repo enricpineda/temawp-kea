@@ -163,6 +163,8 @@ nav {
 #menulateral {padding: 0; margin: 0 0.75em 0 0;}
 #menulateral ul {margin: 0; padding: 0;}
 #menulateral ul li {list-style-type: none; font-family: 'akkurat'; font-size: 1.2em; margin: 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
+
+#carousel {display: none;}
 }
 
 /* Estils escriptori */
@@ -299,4 +301,7 @@ flex-grow: 5;
 #menupral ul ul:hover {display: block;}
 #menupral ul ul:hover ~ a {background-color: #00e12b;
 color: rgb(43,44,40);;}
+
+#carousel {width: 1200px; margin: 0px auto;}
+#carousel img  {width: 100%; height: auto;}
 }

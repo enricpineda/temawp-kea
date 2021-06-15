@@ -23,7 +23,14 @@
     <div id="idiomes-cap"><?php pll_the_languages(array('hide_current' => 1));?></div>
     <div id="xarxes-cap">
       <div><a href="#"><img src="<?php echo get_theme_file_uri('img/logo-telegram_.jpg');?>"/></a></div>
-      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/icona_correu_kea.png');?>"/></a></div>
+      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/icona-correu.svg');?>"/></a></div>
+      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/icona-facebook.svg');?>"/></a></div>
+      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/icona-instagram.svg');?>"/></a></div>
+      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/icona-twitter.svg');?>"/></a></div>
+      <div><a href="#"><img src="<?php echo get_theme_file_uri('img/icona-youtube.svg');?>"/></a></div>
+
+
+
     </div>
 
   <div id="correu-cap"><?php pll_e('Accés al correu');?></div>

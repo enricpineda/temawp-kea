@@ -24,8 +24,11 @@ Apartat de correus 1.008 · 08200 Sabadell</p></div>
 
 </div>
 </div>
-  <script src="js/scripts.js"></script>
-  <script src="funcions.js"></script>
+<script>
+  new Glide('.glide', {
+    autoplay: 5000
+  }).mount()
+</script>
 
 </body>
 </html>

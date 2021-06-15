@@ -1,6 +1,21 @@
 <?php /* Template Name: portada 2021 */ ?>
 <?php get_header();?>
 
+<div id="carousel">
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="http://localhost/proveskea/wp-content/uploads/2021/06/bs_amades-1.jpg" /></li>
+        <li class="glide__slide"><img src="http://localhost/proveskea/wp-content/uploads/2021/06/bs_manifest-1.jpg" /></li>
+        <li class="glide__slide"><img src="http://localhost/proveskea/wp-content/uploads/2021/06/bs_cursos-1.jpg" /></li>
+      </ul>
+    </div>
+    
+  </div>
+
+</div>
+
+
 <div id="principal">
 <div id="menulateral"><?php wp_nav_menu( array( 'theme_location' => 'lateral-portada' ) ); ?>
 <p></p>
