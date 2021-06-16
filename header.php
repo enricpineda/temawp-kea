@@ -42,7 +42,7 @@
     <a href="#" onclick="montruMenuo(); return false;"><img src="<?php echo get_theme_file_uri('img/iconamenu.png');?>" class="toggle"/></a>
   </div>
   <div id="cercador">
-<input type="search" /> <img src="<?php echo get_theme_file_uri('img/iconabuscar-blanc.svg');?>" class="sercxilo-telefono" /> <img src="<?php echo get_theme_file_uri('img/iconabuscar.svg');?>" class="sercxilo-granda" />
+  <?php get_search_form(); ?>
   </div>
 
   <div id="menupral">

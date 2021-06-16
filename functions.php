@@ -25,5 +25,7 @@ add_theme_support( 'post-thumbnails' );
 pll_register_string("entrada-correu", "Accés al correu");
 pll_register_string("donem-suport", "Donem suport");
 pll_register_string("noticies", "Notícies");
-
+pll_register_string("cercar", "Cercar");
+pll_register_string("compartir", "Compartir");
+pll_register_string("arxiu", "Arxiu de notícies");
 ?>
