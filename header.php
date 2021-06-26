@@ -16,7 +16,9 @@
 <header>
 <div id="logo-xarxes" class="bloc">
 <div id="logo">
+  <a href="<?php get_home_url();?>">
   <img src="<?php echo get_theme_file_uri('img/logo_esperanto.jpg');?>" />
+</a>
 </div>
 <div id="idiomes-xarxes-correu">
 

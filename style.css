@@ -44,16 +44,15 @@ a:hover {
 }
 
 #capapeu {
-  width: 100vw;
   box-sizing: border-box;
   background-color: #dadada;
-  padding: 0.75em;
+  padding: 0.75em 0;
 }
 #principal {padding: 0.75em;}
 
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
-
+#capapeu {width: 100vw;}
 #footer {width: 100vw; box-sizing: border-box; padding: 0.75;}
 #footer div {width: 100%;}
 .donemsuport-llistat {margin: 0; padding: 0.75em; display:flex; flex-direction: row; flex-wrap: wrap;}
@@ -179,6 +178,7 @@ header {width: 1200px; margin: 0px auto;}
 #principal {width: 1200px; margin: 0px auto; display: flex; flex-direction: row;}
 #footer {width: 1200px; margin: 0px auto; display: flex; flex-direction: row;}
 #footer div {flex-grow: 1;}
+#capapeu {width: 100%;}
 .donemsuport-llistat {display: flex; margin: 0; padding: 0.75em;}
 .donemsuport-llistat li {list-style-type: none; display: inline-block; flex-grow: 1;}
 
