@@ -50,6 +50,8 @@ a:hover {
 }
 #principal {padding: 0.75em;}
 
+.titular-primer {font-size: 2em; margin: 0; padding: 0 0 0.5em 0;}
+
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
 #capapeu {width: 100vw;}
@@ -193,10 +195,10 @@ header {width: 1200px; margin: 0px auto;}
 #menulateral ul li {list-style-type: none; font-family: 'akkurat'; font-size: 1.2em; margin: 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
 #twitter {width: 200px;}
 #central {order: 2; width: 60%; display: flex; flex-flow: column; padding: 0 0 0 2em;}
-#agenda {order: 3; width: 25%;}
+#agenda {order: 3; width: 20%; padding: 0 0 0 2em;}
 .noticia-gran {display: flex; flex-direction: row;}
 .imatge-noticia {order: 1; flex-grow: 1;}
-.text-noticia {order:2; flex-grow: 3; box-sizing: border-box; margin: 0; padding: 0 0 0 0.75em;}
+.text-noticia {order:2; flex-grow: 3; box-sizing: border-box; margin: 0; padding: 0 0 0 1em;}
 
 #logo-xarxes {display: flex;flex-flow: row;}
 #logo {order: 1; box-sizing: border-box;padding: 0.75em; width: auto; flex-grow: 1;}
@@ -281,6 +283,7 @@ flex-grow: 5;
 #menupral ul ul {
   position: absolute; top: 100%; display: none; background-color: #00e12b; z-index: 123456; width: 100%;
 }
+#menupral ul ul ul {position: absolute; top: -8px; left: 105%; display: none; background-color: #999; z-index: 123987; width: 100%;}
   #menupral ul li{
     list-style-type: none;
     margin: 0;
@@ -314,6 +317,8 @@ flex-grow: 5;
 #menupral ul li:hover > ul.sub-menu {display: block;}
 #menupral ul ul:hover {display: block;}
 #menupral ul ul:hover ~ a {background-color: #00e12b;
+color: rgb(43,44,40);;}
+#menupral ul ul ul:hover ~ a {background-color: #AAA;
 color: rgb(43,44,40);;}
 
 #carousel {width: 1200px; margin: 0px auto;}

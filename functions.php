@@ -11,7 +11,9 @@ function register_my_menus() {
   register_nav_menus(
     array(
       'menusuperior' => __( 'Menú superior' ),
-      'lateral-portada' => __( 'Menú lateral portada' )
+      'lateral-portada' => __( 'Menú lateral portada' ),
+      'menusupkej' => __( 'Menú superior KEJ'),
+      'lateralportadakej' => __ ( 'Menú lateral portada KEJ')
      )
    );
  }

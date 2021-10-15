@@ -26,7 +26,6 @@ if ( have_posts() ) :
 
   <h3><?php pll_e("Compartir");?></h3>
 
-<h3><a href="#"><?php pll_e("Arxiu de notícies");?></a>
 
 </div>
 
