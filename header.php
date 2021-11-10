@@ -24,8 +24,8 @@
 
     <div id="idiomes-cap"><?php pll_the_languages(array('hide_current' => 1));?></div>
     <div id="xarxes-cap">
-      <div><a href="" target="_blank"><img src="<?php echo get_theme_file_uri('img/logo-telegram_.jpg');?>"/></a></div>
-      <div><a href="https://telegram.esperanto.cat" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-correu.svg');?>"/></a></div>
+      <div><a href="https://telegram.esperanto.cat" target="_blank"><img src="<?php echo get_theme_file_uri('img/logo-telegram_.jpg');?>"/></a></div>
+      <div><a href="mailto:info@esperanto.cat" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-correu.svg');?>"/></a></div>
       <div><a href="https://www.facebook.com/EsperantoCAT" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-facebook.svg');?>"/></a></div>
       <div><a href="https://www.instagram.com/esperanto_cat/" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-instagram.svg');?>"/></a></div>
       <div><a href="https://twitter.com/EsperantoCAT" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-twitter.svg');?>"/></a></div>
