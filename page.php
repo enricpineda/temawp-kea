@@ -1,3 +1,4 @@
+<?php /* Template Name: interior KEA */ ?>
 <?php get_header();?>
 
 

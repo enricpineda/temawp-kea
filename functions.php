@@ -30,4 +30,34 @@ pll_register_string("noticies", "Notícies");
 pll_register_string("cercar", "Cercar");
 pll_register_string("compartir", "Compartir");
 pll_register_string("arxiu", "Arxiu de notícies");
+pll_register_string("agenda", "Agenda");
+pll_register_string("quan", "Quan?");
+pll_register_string("on", "On?");
+pll_register_string("gener", "de gener");
+pll_register_string("febrer", "de febrer");
+pll_register_string("març", "de març");
+pll_register_string("abril", "d'abril");
+pll_register_string("maig", "de maig");
+pll_register_string("juny", "de juny");
+pll_register_string("juliol", "de juliol");
+pll_register_string("agost", "d'agost");
+pll_register_string("setembre", "de setembre");
+pll_register_string("octubre", "d'octubre");
+pll_register_string("novembre", "de novembre");
+pll_register_string("desembre", "de desembre");
+
+add_action('init', 'events_init');
+function events_init() {
+	$args = array(
+		'labels' => array(
+			'name' => __('Esdeveniments'),
+			'singular_name' => __('Esdeveniment'),
+		),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array("slug" => "esdeveniments"),
+		'supports' => array('thumbnail','editor','title','custom-fields')
+	);
+	register_post_type( 'events' , $args );
+}
 ?>

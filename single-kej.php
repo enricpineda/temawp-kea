@@ -1,5 +1,5 @@
-<?php /* Template Name: novetat KEA */ ?>
-<?php get_header();?>
+<?php /* Template Name: novetat KEJ */ ?>
+<?php get_header('kej');?>
 
 
 <?php
