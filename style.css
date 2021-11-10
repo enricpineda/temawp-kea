@@ -51,7 +51,10 @@ a:hover {
 #principal {padding: 0.75em;}
 
 .titular-primer {font-size: 2em; margin: 0; padding: 0 0 0.5em 0;}
+<<<<<<< HEAD
 .miniicona {width: 20px; height: auto; vertical-align: middle;}
+=======
+>>>>>>> 5c0cb90e56250e5c9de5f078f21d9a127401154e
 
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
