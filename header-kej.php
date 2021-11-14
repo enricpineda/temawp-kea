@@ -17,19 +17,17 @@
 <div id="logo-xarxes" class="bloc">
 <div id="logo">
   <a href="<?php echo get_home_url();?>">
-  <img src="<?php echo get_theme_file_uri('img/logo_esperanto.jpg');?>" />
+  <img src="<?php echo get_theme_file_uri('img/logo-kea-vector.svg');?>" />
 </a>
 </div>
 <div id="idiomes-xarxes-correu">
 
     <div id="idiomes-cap"><?php pll_the_languages(array('hide_current' => 1));?></div>
     <div id="xarxes-cap">
-      <div><a href="https://telegram.esperanto.cat" target="_blank"><img src="<?php echo get_theme_file_uri('img/logo-telegram_.jpg');?>"/></a></div>
-      <div><a href="mailto:info@esperanto.cat" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-correu.svg');?>"/></a></div>
-      <div><a href="https://www.facebook.com/EsperantoCAT" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-facebook.svg');?>"/></a></div>
-      <div><a href="https://www.instagram.com/esperanto_cat/" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-instagram.svg');?>"/></a></div>
-      <div><a href="https://twitter.com/EsperantoCAT" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-twitter.svg');?>"/></a></div>
-      <div><a href="https://www.youtube.com/channel/UCzxvjH5KxcefP1-RrqV8tSA/featured" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-youtube.svg');?>"/></a></div>
+
+      <div><a href="https://www.facebook.com/kejesperantocat/" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-facebook.svg');?>"/></a></div>
+      <div><a href="https://www.instagram.com/kejesperanto/" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-instagram.svg');?>"/></a></div>
+      <div><a href="https://twitter.com/kejesperanto" target="_blank"><img src="<?php echo get_theme_file_uri('img/icona-twitter.svg');?>"/></a></div>
 
 
 

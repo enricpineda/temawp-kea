@@ -21,8 +21,16 @@ if ( have_posts() ) :
 
   <h3><?php pll_e("Compartir");?></h3>
 
-<h3><a href="#"><?php pll_e("Arxiu de notícies");?></a>
+<h3>
+  <?php
+  if (pll_current_language() == "eo") :
+  echo '<a href="/arhivo-de-novajoj/">';
 
+else:
+    echo '<a href="/arxiu-de-noticies/">';
+  endif; ?>
+    <?php pll_e("Arxiu de notícies");?></a>
+</h3>
 </div>
 
 

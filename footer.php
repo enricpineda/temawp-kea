@@ -3,7 +3,9 @@
 
 <div><p><strong>Associació Catalana d'Esperanto / Kataluna Esperanto-Asocio
 </strong></p><p>
-Apartat de correus 1.008 · 08200 Sabadell</p></div>
+Hotel d'entitats Gràcia<br />
+C/ Providència 42<br />
+08024 Barcelona</p></div>
 
 <div><p>Avís Legal</p>
 
