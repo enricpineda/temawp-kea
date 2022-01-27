@@ -21,7 +21,9 @@ function register_my_menus() {
       'menusuperior' => __( 'Menú superior' ),
       'lateral-portada' => __( 'Menú lateral portada' ),
       'menusupkej' => __( 'Menú superior KEJ'),
-      'lateralportadakej' => __ ( 'Menú lateral portada KEJ')
+      'lateralportadakej' => __ ( 'Menú lateral portada KEJ'),
+			'interiorkea' => __ ('Menú interior KEA'),
+			'interiorkej' => __ ('Menú INterior KEJ')
      )
    );
  }
@@ -30,6 +32,23 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 add_action( 'init', 'register_my_menus' );
 
 add_theme_support( 'post-thumbnails' );
+
+function area_widgets_interior() {
+
+	register_sidebar( array(
+		'name'          => 'Lateral pàgines interiors',
+		'id'            => 'lateral-interiors',
+		'description'   => 'La banda de la dreta de les pàgines interiors',
+		'before_widget' => '<div id="menulateral">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+}
+
+add_action( 'widgets_init', 'area_widgets_interior' );
+
 
 // Cadenes de text a traduir
 pll_register_string("entrada-correu", "Accés al correu");

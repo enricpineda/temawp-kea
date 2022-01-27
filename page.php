@@ -24,9 +24,7 @@ if ( have_posts() ) :
   <div class="post-text-principal">
 <?php the_content();?></div>
 <div class="post-columna-dreta">
-
-<!--  <h3><?php pll_e("Compartir");?></h3>-->
-
+<?php dynamic_sidebar( 'lateral-interiors' );?>
 
 </div>
 
