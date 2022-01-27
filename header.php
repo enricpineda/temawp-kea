@@ -4,8 +4,8 @@
   <meta charset="utf-8">
 
   <title><?php bloginfo( 'name' ); ?></title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="La pàgina web de l'Associació Catalana d'Esperanto / La retpaĝaro de Kataluna Esperanto Asocio.">
+  <meta name="author" content="KEA">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <?php wp_head();?>

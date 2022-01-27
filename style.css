@@ -33,12 +33,17 @@ Text Domain: kea
 body {margin: 0;padding: 0;font-family: 'Open sans', sans-serif;}
 
 a {
-  color: rgb(43,44,40);
+  color: rgb(0,139,25);
   text-decoration: none;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: rgb(43,44,40);
 }
 
 a:hover {
   color: rgb(0,225,43);
+  text-decoration: underline;
 }
 
 .lang-item {
@@ -47,18 +52,23 @@ a:hover {
 
 #capapeu {
   box-sizing: border-box;
-  background-color: #dadada;
+  background-color: #666666;
   padding: 0.75em 0;
 }
+
+#capapeu a {color: #fff;}
+#capapeu a:hover {text-decoration: underline;}
+.portada-publicacio {padding-right: 1em;}
+
 #principal {padding: 0.75em;}
 
-.titular-primer {font-size: 2em; margin: 0; padding: 0 0 0.5em 0;}
+.titular-primer {font-size: 2em; margin: 0; padding: 0.5em 0 0 0;}
 .miniicona {width: 20px; height: auto; vertical-align: middle;}
 
 /* Estils mòbil */
 @media only screen and (max-width: 768px) {
 #capapeu {width: 100vw;}
-#footer {width: 100vw; box-sizing: border-box; padding: 0.75em;}
+#footer {width: 100vw; box-sizing: border-box; padding: 0.75em; color: #FFF;}
 #footer div {width: 100%;}
 .donemsuport-llistat {margin: 0; padding: 0.75em; display:flex; flex-direction: row; flex-wrap: wrap;}
 .donemsuport-llistat li {list-style-type: none; flex-grow: 1;}
@@ -187,18 +197,19 @@ nav {
 
 header {width: 1200px; margin: 0px auto;}
 #principal {width: 1200px; margin: 0px auto; display: flex; flex-direction: row;}
-#footer {width: 1200px; margin: 0px auto; display: flex; flex-direction: row;}
+#principal-ke {width: 1200px; margin: 0px auto;}
+#footer {width: 1200px; margin: 20px auto; display: flex; flex-direction: row; color: #fff;}
 #footer div {flex-grow: 1;}
 #capapeu {width: 100%;}
 .donemsuport-llistat {display: flex; margin: 0; padding: 0.75em;}
 .donemsuport-llistat li {list-style-type: none; display: inline-block; flex-grow: 1;}
 
-#menulateral {order: 1; width: 220px; padding: 0; margin: 0 0.75em 0 0;}
+#menulateral { padding: 0; margin: 0 0 1.5em 0;}
 #menulateral ul {margin: 0; padding: 0;}
 #menulateral ul li {list-style-type: none; font-family: 'akkurat'; font-size: 1.2em; margin: 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
 #twitter {width: 200px;}
-#central {order: 2; width: 60%; display: flex; flex-flow: column; padding: 0 0 0 2em;}
-#agenda {order: 3; width: 20%; padding: 0 0 0 2em;}
+#central {order: 1; width: 70%; display: flex; flex-flow: column; padding: 0;}
+#agenda {order: 2; width: 30%; padding: 0 0 0 2em;}
 .noticia-gran {display: flex; flex-direction: row;}
 .imatge-noticia {order: 1; flex-grow: 1;}
 .text-noticia {order:2; flex-grow: 3; box-sizing: border-box; margin: 0; padding: 0 0 0 1em;}
@@ -206,6 +217,10 @@ header {width: 1200px; margin: 0px auto;}
 .noticiasecundaria {flex-grow: 1; margin: 0 1.5em 0 0; padding: 0.5em; border: 2px dashed #CCC;}
 .noticiasecundaria h4 {margin: 0;}
 .noticiasecundaria a {color: #000; font-size: 1.2em;}
+
+.container-xxss{display: flex; flex-direction: row; margin: 1em 0;}
+.xxss {flex-grow: 1; margin: 0 1.5em 0 0;}
+
 
 #logo-xarxes {display: flex;flex-flow: row;}
 #logo {order: 1; box-sizing: border-box;padding: 0.75em; width: auto; flex-grow: 1;}
@@ -330,9 +345,12 @@ flex-grow: 5;
 #carousel {width: 1200px; margin: 0px auto;}
 #carousel img  {width: 100%; height: auto;}
 
-.titol_post {width: 100%; background-repeat: no-repeat; background-position: center center; background-size: cover; margin: 1em 0; background-attachment: fixed;     background-blend-mode: multiply; background-color:#00e12b; }
-.titol-post-text {width: 1200px; margin: 0px auto; padding: 5em 0; color: #fff; text-align: center;}
+.titol_post {width: 100%; background-repeat: no-repeat; background-position: center center; background-size: cover; margin: 1em 0 0.3em 0; background-attachment: fixed;     background-blend-mode: multiply; background-color:#00871d;}
+.titol-post-text {width: 1200px; margin: 0px auto; padding: 5em 0; color: #fff; text-align: center; font-weight: bold;}
 .post-text-principal {width: 75%; box-sizing: border-box; padding: 0 1em 0 0;}
 .post-columna-dreta {width: 25%; display: flex; flex-direction: column;}
 #central h2, #agenda h2 {width: 100%; font-family: 'akkurat'; font-size: 1.2em; margin: 0 0 1em 0; padding: 0.75em 0; border-bottom: 2px dashed #999; font-weight: bold;}
+.logo-blanc-peu {width: 250px; height: auto; margin: 1em;}
+.filaKE {display: flex; flex-direction: row;flex-wrap: wrap;}
+.itemKE {width: 230px;}
 }

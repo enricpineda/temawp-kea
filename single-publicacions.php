@@ -1,5 +1,4 @@
-<?php /* Template Name: novetat KEJ */ ?>
-<?php get_header('kej');?>
+<?php get_header();?>
 
 
 <?php
@@ -8,31 +7,30 @@ if ( have_posts() ) :
     ?>
     <div class="titol_post" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full' );?>');" />
       <div class="titol-post-text">
-        <?php the_date('d/m/Y'); ?>
 <h1><?php the_title();?>
       </div>
     </div>
 
 
 <div id="principal">
-
+<div class="portada-publicacio">
+<?php the_post_thumbnail( 'full' );?>
+</div>
   <div class="post-text-principal">
 <?php the_content();?></div>
 <div class="post-columna-dreta">
-
-<!--  <h3><?php pll_e("Compartir");?></h3>-->
-
-  <h3>
   <?php
-echo pll_current_language('name');
-  if (pll_current_language() == "eo") {
-  echo '<a href="/arhivo-de-novajoj/">';
+  $fitxer = get_field('arxiu_descarrega');
+  if ($fitxer) {
+    $adreca_fitxer = $fitxer['url'];
+  ?>
+  <h3><?php pll_e("Descàrrega");?></h3>
+  <p><a href="<?php echo esc_attr($adreca_fitxer);?>"><?php pll_e("Descarrega't aquest número de KE");?></a></p>
+<?php } ?>
+<h3><?php pll_e("Números publicats");?></h3>
+<p><?php pll_e("Accedeix a l'arxiu");?></p>
 
-  } else {
-    echo 'a href="/arxiu-de-noticies/">';
-   } ?>
-      <?php pll_e("Arxiu de notícies");?></a>
-  </h3>
+
 </div>
 
 

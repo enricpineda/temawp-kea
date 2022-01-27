@@ -25,7 +25,7 @@ if ( have_posts() ) :
 <?php the_content();?></div>
 <div class="post-columna-dreta">
 
-  <h3><?php pll_e("Compartir");?></h3>
+<!--  <h3><?php pll_e("Compartir");?></h3>-->
 
 
 </div>

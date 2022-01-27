@@ -5,6 +5,7 @@
   <div class="glide">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
+        <li class="glide_slide"><img src="<?php echo get_theme_file_uri('img/banners/banner-franquesa.png');?>" /> </li>
         <li class="glide__slide"><img src="/wp-content/uploads/2021/06/bs_amades-1.jpg" /></li>
         <li class="glide__slide"><img src="/wp-content/uploads/2021/06/bs_manifest-1.jpg" /></li>
         <li class="glide__slide"><img src="/wp-content/uploads/2021/06/bs_cursos-1.jpg" /></li>
@@ -17,11 +18,7 @@
 
 
 <div id="principal">
-<div id="menulateral"><?php wp_nav_menu( array( 'theme_location' => 'lateral-portada' ) ); ?>
-<p></p>
-<div id="twitter">
-<a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/EsperantoCAT?ref_src=twsrc%5Etfw">Tweets by EsperantoCAT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
-</div>
+
 <div id="central">
   <?php if (pll_current_language() == "eo") :
     $link = "arhivo-de-novajoj";
@@ -39,11 +36,15 @@ $arguments = array (
 $post_query = new WP_Query($arguments);
 if ( $post_query -> have_posts() ) :
     while ( $post_query -> have_posts() ) : $post_query -> the_post();
-    the_title( '<h3 class="titular-primer"><a href="'.get_post_permalink().'">', '</a></h3>' );
+
     ?>
     <div class="noticia-gran">
 <div class="imatge-noticia"><?php the_post_thumbnail( 'thumbnail' );?></div>
   <div class="text-noticia">
+<?php
+the_date('d/m/Y');
+the_title( '<h3 class="titular-primer"><a href="'.get_post_permalink().'">', '</a></h3>' ); ?>
+
     <?php
                 the_excerpt();
         ?>
@@ -70,6 +71,7 @@ if ( $post_query -> have_posts() ) :
     ?>
 <div class="noticiasecundaria">
     <?php
+    the_date('d/m/Y');
         the_title( '<h4><a href="'.get_post_permalink().'">', '</a></h4>' );
         ?>
       </div>
@@ -81,8 +83,23 @@ endif;
 wp_reset_postdata();
 ?>
 </div>
+
+<div class="container-xxss">
+<div class="xxss">
+<h2>Twitter</h2>
+  <a class="twitter-timeline" data-width="100%" data-height="450" href="https://twitter.com/EsperantoCAT?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+
+<div class="xxss">
+  <h2>Instagram</h2>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-f558de3f-b2a1-4760-a0b7-a2b9d126bb94"></div>
+</div>
+</div>
+
 </div>
 <div id="agenda">
+  <div id="menulateral"><?php wp_nav_menu( array( 'theme_location' => 'lateral-portada' ) ); ?></div>
+
 <h2><?php pll_e('Agenda');?></h2>
 
 <?php
@@ -122,7 +139,9 @@ endif;
 wp_reset_postdata();
 ?>
 
-</div>
-</div>
 
+
+
+</div>
+</div>
 <?php get_footer();?>

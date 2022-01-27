@@ -4,8 +4,8 @@
   <meta charset="utf-8">
 
   <title><?php bloginfo( 'name' ); ?></title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="Kataluna Esperanto Junularo - KEJ">
+  <meta name="author" content="KEJ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <?php wp_head();?>

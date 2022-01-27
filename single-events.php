@@ -49,8 +49,13 @@ pll_e($elmes);
 <h3><?php pll_e("On?");?></h3>
 <p><?php echo $llocfinal;?></p>
   <h3><?php pll_e("Compartir");?></h3>
-
-<h3><a href="#"><?php pll_e("Agenda");?></a>
+  <?php if (pll_current_language() == "eo") :
+    $link = "agendo-de-okazajoj";
+  else:
+    $link = "agenda-desdeveniments";
+  endif;
+  ?>
+<h3><a href="/<?php echo $link;?>/"><?php pll_e("Agenda d'esdeveniments");?></a>
 
 </div>
 

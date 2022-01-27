@@ -8,6 +8,7 @@ if ( have_posts() ) :
     ?>
     <div class="titol_post" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full' );?>');" />
       <div class="titol-post-text">
+        <?php the_date('d/m/Y'); ?>
 <h1><?php the_title();?>
       </div>
     </div>
@@ -19,7 +20,7 @@ if ( have_posts() ) :
 <?php the_content();?></div>
 <div class="post-columna-dreta">
 
-  <h3><?php pll_e("Compartir");?></h3>
+  <!--<h3><?php pll_e("Compartir");?></h3>-->
 
 <h3>
   <?php

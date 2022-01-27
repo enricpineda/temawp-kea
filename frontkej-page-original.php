@@ -17,14 +17,17 @@
 
 
 <div id="principal">
-
-<div id="central">
-  <?php if (pll_current_language() == "eo") :
-    $link = "arhivo-de-novajoj";
-  else:
-    $link = "arxiu-de-noticies";
-  endif;
-  ?>
+<div id="menulateral"><?php wp_nav_menu( array( 'theme_location' => 'lateralportadakej' ) ); ?>
+<p></p>
+<div id="twitter">
+<a class="twitter-timeline" data-width="250" data-height="400" href="https://twitter.com/KEJEsperanto?ref_src=twsrc%5Etfw">Tweets by EsperantoCAT</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
+</div>
+<div id="central"><?php if (pll_current_language() == "eo") :
+  $link = "arhivo-de-novajoj-2";
+else:
+  $link = "arxiu-de-noticies-2";
+endif;
+?>
 <h2><a href="<?php echo $link;?>"><?php pll_e('Notícies');?></a></h2>
 <?php
 $arguments = array (
@@ -35,15 +38,13 @@ $arguments = array (
 $post_query = new WP_Query($arguments);
 if ( $post_query -> have_posts() ) :
     while ( $post_query -> have_posts() ) : $post_query -> the_post();
-
     ?>
     <div class="noticia-gran">
 <div class="imatge-noticia"><?php the_post_thumbnail( 'thumbnail' );?></div>
   <div class="text-noticia">
-<?php
-the_date('d/m/Y');
-the_title( '<h3 class="titular-primer"><a href="'.get_post_permalink().'">', '</a></h3>' ); ?>
-
+    <?php
+    the_date('d/m/Y');
+    the_title( '<h3 class="titular-primer"><a href="'.get_post_permalink().'">', '</a></h3>' ); ?>
     <?php
                 the_excerpt();
         ?>
@@ -82,23 +83,8 @@ endif;
 wp_reset_postdata();
 ?>
 </div>
-
-<div class="container-xxss">
-<div class="xxss">
-<h2>Twitter</h2>
-  <a class="twitter-timeline" data-width="100%" data-height="450" href="https://twitter.com/KEJEsperanto?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </div>
-
-<div class="xxss">
-  <h2>Instagram</h2>
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-d36df9e8-5d17-44ec-840a-f4b06ad8275f"></div>
-</div>
-</div>
-
 </div>
 <div id="agenda">
-  <div id="menulateral"><?php wp_nav_menu( array( 'theme_location' => 'lateral-portada' ) ); ?></div>
-
 <h2><?php pll_e('Agenda');?></h2>
 
 <?php
@@ -137,9 +123,6 @@ else:
 endif;
 wp_reset_postdata();
 ?>
-
-
-
 
 </div>
 </div>

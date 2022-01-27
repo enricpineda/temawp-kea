@@ -1,10 +1,10 @@
-<?php /* Template Name: arxiu */ ?>
+<?php /* Template Name: agenda-kej */ ?>
 <?php get_header();?>
 
 
 <div class="titol_post" style="background-image: url('<?php echo get_theme_file_uri('img/fons-general.jpeg');?>');" />
   <div class="titol-post-text">
-<h1><?php pll_e("Arxiu de notícies");?></h1>
+<h1><?php pll_e("Agenda d'esdeveniments");?></h1>
   </div>
 </div>
 
@@ -17,8 +17,7 @@
 
 
   $args = array(
-      'post_type' => 'post',
-      'category_name' => 'anuncis-i-noticies',
+      'post_type' => 'events',
 
       'posts_per_page' => 20,
       'orderby' => 'date',
@@ -27,15 +26,9 @@
   $consulta = new WP_Query($args);
   while ($consulta->have_posts()):
     $consulta->the_post();
-    ?>
-    <div class="noticia-gran">
-<div class="imatge-noticia"><?php the_post_thumbnail( 'thumbnail' );?></div>
-  <div class="text-noticia">
-    <?php
-    the_date('d/m/Y');
     the_title('<h2><a href="'.get_post_permalink().'">','</a></h2>');
 the_excerpt();
-echo "</div></div><p></p>";
+
 endwhile;
 
 ?>

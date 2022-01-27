@@ -53,6 +53,15 @@ pll_register_string("setembre", "de setembre");
 pll_register_string("octubre", "d'octubre");
 pll_register_string("novembre", "de novembre");
 pll_register_string("desembre", "de desembre");
+pll_register_string("agenda-esdeveniments", "Agenda d'esdeveniments");
+pll_register_string("privacitat", "Política de privacitat");
+pll_register_string("cookies", "Política de cookies");
+pll_register_string("avis-legal", "Avś legal");
+pll_register_string("darrers-numeros-publicats", "Darrers números publicats");
+pll_register_string("descarrega", "Descàrrega");
+pll_register_string("numeros-publicats", "Números publicats");
+pll_register_string("arxiu-publicats", "Accedeix a l'arxiu");
+pll_register_string("descarrega-ke", "Descarrega't aquest número de KE");
 
 add_action('init', 'events_init');
 function events_init() {
@@ -68,4 +77,25 @@ function events_init() {
 	);
 	register_post_type( 'events' , $args );
 }
+
+add_action('init', 'publicacions_init');
+function publicacions_init() {
+	$args = array(
+		'labels' => array(
+			'name' => __('Publicacions'),
+			'singular_name' => __('Publicació'),
+		),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array("slug" => "publicacions"),
+		'supports' => array('thumbnail','editor','title','custom-fields')
+	);
+	register_post_type( 'publicacions' , $args );
+}
+
+function reg_cat() {
+         register_taxonomy_for_object_type('category','publicacions');
+}
+add_action('init', 'reg_cat');
+
 ?>
